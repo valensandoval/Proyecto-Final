@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/logo.png">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="definicion.html">¿Qué es Psicología?</a></li>
+                <li><a href="cuando.html">¿Cuándo ir al Psicólogo?</a></li>
+                <li><a href="registro.html">Regístrate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h2 class="span">¡Cuida tu salud mental, registra tus datos e inicia tu proceso de conocimiento de atención
+            integral en Psicología! </h2>
+    </div>
+
+    <div class="container">
+        <h1 class="titreg">Formulario de Registro</h1>
+        <form action="guardar_registro.php" method="POST">
+            <div class="form-group">
+                <label for="pri-nombres">Primer Nombre:*</label>
+                <input type="text" id="pri-nombres" name="pri-nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="seg-nombres">Segundo Nombre:</label>
+                <input type="text" id="seg-nombres" name="seg-nombres">
+            </div>
+            <div class="form-group">
+                <label for="pri-apellidos">Primer Apellido:*</label>
+                <input type="text" id="pri-apellidos" name="pri-apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="seg-apellidos">Segundo Apellido:</label>
+                <input type="text" id="seg-apellidos" name="seg-apellidos">
+            </div>
+            <div class="form-group">
+                <label for="numero">Número de contacto:*</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:*</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <span class="validacion" id="emailMessage"></span>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:*</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <span class="validacion" id="contrasenaMessage"></span>
+            </div>
+            <div class="form-group">
+                <div class="passwords">
+                    <button class="ver" type="button" id="mostrar1">Mostrar Contraseña</button>
+                    <button class="ocultar" type="button" id="ocultar1" style="display: none;">Ocultar
+                        Contraseña</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="repetir-contrasena">Repetir Contraseña:*</label>
+                <input type="password" id="repetir-contrasena" name="repetir-contrasena" required>
+            </div>
+            <div class="form-group">
+                <span class="validacion" id="repetir-contrasenaMessage"></span>
+            </div>
+            <div class="form-group">
+                <div class="passwords">
+                    <button class="ver" type="button" id="mostrar2">Mostrar Contraseña</button>
+                    <button class="ocultar" type="button" id="ocultar2" style="display: none;">Ocultar
+                        Contraseña</button>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="boton-volver">Volver</a>
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+        <script src="JavaScript/validacion.js"></script>
+    </div>
+
+    <footer>
+        <div class="pie">
+            <p>Contacto: 3223539534</p>
+            <p>Correo Institucional:<a href="">vsandova@ibero.edu.co</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

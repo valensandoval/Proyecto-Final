@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #9B59B6;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu li {
+    flex: 1;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: monospace;
+    transition: color 0.3s, border 0.3s;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+footer {
+    background-color: #9B59B6;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.pie {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D7BDE2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.valen,
+.razon {
+    text-align: center;
+}
+
+.logotipo {
+    display: block;
+    margin: 0 auto;
+}
+
+.frase {
+    text-align: center;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.span {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 1;
+}
+
+.validacion {
+    margin: 0px 0px 0px 240px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    box-sizing: border-box;
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    flex: 1;
+    width: 100%;
+}
+
+form button[type="submit"] {
+    background-color: #C39BD3;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.boton-volver {
+    background-color: #C39BD3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ver,
+.ocultar {
+    background-color: #C39BD3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0px 0px 0px 300px;
+}
+
+.video {
+    max-width: 720px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu2 {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+}
+
+.menu2 li {
+    position: relative;
+}
+
+.menu2 li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #5DADE2;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu2 li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #5DADE2;
+}
+
+.menu2 li:hover ul {
+    display: block;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    width: 525px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #AED6F1;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 77.3%;
+    height: auto;
+}
+
+.slide-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+#prev,
+#next {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: #555;
+}
+
+.definicion {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 130px 20px 20px 20px;
+}
+
+.secciones-container {
+    display: flex;
+}
+
+.dividido {
+    width: 70%;
+}
